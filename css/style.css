@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #000a636e;
+    color: #fff;
+    font-family: 'lato';
+    border-radius: 35px;
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 50% auto auto auto auto auto auto auto;
+    font-size: 10pt;
+    padding: 14px 45px;
+}
+
+.li:hover{
+    color: rgb(185, 185, 185);
+}
+
+.li{
+    padding-top: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.services{
+    background-color: #000A63;
+    position: absolute;
+    z-index: 3;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 20px 60px;
+}
+
+#h2_services{
+    position: relative;
+    color: white;
+    text-decoration: underline;
+    font-family: 'barlow';
+    font-size: 22pt;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.garis{
+    width: 0;
+    height: 100px;
+    border: 1px #82828270 solid;
+}
+
+.icon_services{
+    display: grid;
+    grid-template-columns: auto 5% auto 5% auto;
+}
+
+.text_services{
+    display: grid;
+    grid-template-columns: 30% 28% 30%;
+    text-align: center;
+    grid-column-gap: 60px;
+    grid-row-gap: 15px;
+    margin-top: -100px;
+}
+
+.h4_services{
+    font-family: 'barlow';
+    font-size: 18pt;
+    color: #cbcbcb;
+}
+
+.body_text_services{
+    font-family: 'lato';
+    font-size: 10pt;
+    color: #c0c0c0;
+    line-height: 140%;
+}
+
+#fav_destination{
+    position: absolute;
+    padding-top: 70%;
+}
+
+.h1_fav{
+    font-family: 'barlow';
+    font-size: 40pt;
+    text-align: center;
+    color: #404040;
+}
+
+.h4_fav{
+    font-family: 'lato';
+    font-size: 14pt;
+    color: #404040;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    width: 90%;
+    background-position: center;
+    margin: 40px auto;
+}
+
+.card_1 img{
+    width: 100%;
+    transition: all linear 0.25s;
+    position: relative;
+    z-index: 1;
+}
+
+.card_1{
+    height: 100%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.kotak{
+    width: 100%;
+    height: 150px;
+    background-image: linear-gradient(to bottom, #000a6300, #000a63be, #000A63, #000A63);
+    position: relative;
+    z-index: 99;
+    margin-top: -150px;
+    padding: 30px 30px;
+    transition: 0.25s all linear;
+}
+
+.region{
+    font-family: 'barlow';
+    font-size: 30pt;
+    color: #fff;
+    margin-top: 50px;
+    transition: 0.25s;
+}
+
+.provinsi{
+    margin-top: 5px;
+    opacity: 0%;
+    transition: 0.25s;
+    font-family: 'lato';
+    color: rgb(136, 136, 136);
+}
+
+.text_region{
+    font-family: 'lato';
+    margin-top: 10px;
+    color: rgb(184, 184, 184);
+    line-height: 150%;
+    font-size: 10pt;
+}
+
+.card_1:hover .region{
+    margin-top: -10px;
+}
+
+.card_1:hover .provinsi{
+    opacity: 100%;
+}
+
+.card_1:hover .kotak{
+    height: 250px;
+    margin-top: -250px;
+}
+
+.card_1:hover img{
+    filter: grayscale(40%);
+}
+
+.card_1:hover .rating{
+    margin-top: 10px;
+}
+
+.judul{
+    display: grid;
+    grid-template-columns: 80% auto;
+}
+
+.rating{
+    margin-top: 70px;
+    transition: 0.25s;
+}
+
+.more{
+    text-align: center;
+    cursor: pointer;
+    font-family: 'lato';
+    color: #000A63;
+    font-size: 16pt;
+    margin-top: -10px;
+    text-decoration: underline;
+}
+
+#car_rent{
+    position: relative;
+    padding-top: 135%;
+}
+
+.item_car{
+    background-image: linear-gradient(#fff, rgba(255, 255, 255, 0.637), rgba(255, 255, 255, 0.466), rgba(255, 255, 255, 0.637), #fff);
+    height: 24.2%;
+    position: absolute;
+    z-index: 4;
+    top: 75.8%;
+    width: 100%;
+}
+
+.h1_car{
+    font-family: 'barlow';
+    font-size: 28pt;
+    text-align: center;
+    color: #404040;
+    margin-top: 20px;
+}
+
+.h2_merk{
+    font-family: 'barlow';
+    font-weight: bolder;
+    font-size: 36pt;
+}
+
+.item{
+    padding-left: 8%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 65% auto;
+    margin-top: 80px;
+}
+
+.item_spec{
+    font-family: 'lato';
+    font-size: 14pt;
+    color: #1f1f1f;
+}
+
+.mobil_png{
+    grid-row: 1/5;
+}
+
+.spec{
+    display: grid;
+    grid-template-columns: 10% auto 10% auto;
+}
+
+.price{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 30%;
+    font-family: 'barlow';
+    grid-gap: 5px;
+    margin-top: 20px;
+}
+
+.btn_book{
+    cursor: pointer;
+    border-radius: 7px;
+    font-family: 'lato';
+    width: 50%;
+    background-color: #000A63;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    height: 80%;
+    box-shadow: #000 0 0 5px;
+}
+
+.btn_book:hover{
+    box-shadow: none;
+}
+
+#tour_packages{
+    position: relative;
+    padding-top: 120px;
+}
+
+.h1_pack{
+    font-family: 'barlow';
+    font-size: 40pt;
+    color: #404040;
+    text-align: center;
+}
+
+.body_pack{
+    font-family: 'lato';
+    font-size: 14pt;
+    color: #404040;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.P4d3n{
+    background-color: #fff;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.11) 0 0 25px;
+    top: 20%;
+    padding: 3% 3%;
+    left: 50%;
+}
+
+.P3d2n{
+    background-color: #fff;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.11) 0 0 25px;
+    top: 48.5%;
+    padding: 3% 3%;
+    right: 50%;
+}
+
+.P2d1n{
+    background-color: #fff;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.11) 0 0 25px;
+    top: 77%;
+    padding: 3% 3%;
+    left: 50%;
+}
+
+.img:hover{
+    transform: scale(1.05);
+}
+
+.img{
+    cursor: pointer;
+    transition: 0.55s;
+}
+
+#why{
+    padding-top: 140px;
+}
+
+.h1_why{
+    font-family: 'barlow';
+    font-size: 40pt;
+    text-align: center;
+    color: #404040;
+}
+
+.container_why{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    padding-top: 50px;
+    text-align: center;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.h_why{
+    font-family: 'barlow';
+    font-size: 25pt;
+    color: #404040;
+}
